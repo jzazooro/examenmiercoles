@@ -1,0 +1,29 @@
+from this import d
+from clases.punto import crear_punto
+from clases.vector import vector
+def rectangulo(x, y, c, d, puntouno, puntodos):
+    crear_punto(x, y)
+    crear_punto(c, d)
+    diagonaluno = vector(x, y, puntouno)
+    diagonaldos = vector(c, d, puntodos)
+    diagonal= diagonaluno-diagonaldos
+
+def obteneraltura(x, y, c, d):
+    crear_punto(x, y)
+    crear_punto(c, d)
+    if y<d:
+        altura=d-y
+    if y>d:
+        altura=y-d
+    
+def obtenerbase(x, y, c, d):
+    crear_punto(x, y)
+    crear_punto(c, d)
+    if x<c:
+        altura=c-x
+    if x>c:
+        altura=x-c
+
+def area(altura,base):
+    areadelrectangulo=base*altura
+    print("el area del rectangulo es de", area, "unidades cuadradas")

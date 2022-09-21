@@ -1,0 +1,16 @@
+from clases.punto import crear_punto
+def localizar_cuadrantes(x, y):
+    if x>0 and y>0:
+        print("el punto pertenece al primer cuadrante")
+    if x<0 and y>0:
+        print("el punto pertenece al segundo cuadrante")
+    if x<0 and y<0:
+        print("el punto pertenece al tercer cuadrante")
+    if x>0 and y<0: 
+        print("el punto pertenece al cuarto cuadrante")
+    if x==0 and y!=0:
+        print("el punto pertenece al eje Y")
+    if x!=0 and y==0:
+        print("el punto pertenece al eje X")
+    if x==0 and y==0:
+        print("el punto pertenece al origen de coordenadas")
